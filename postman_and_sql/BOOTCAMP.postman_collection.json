@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "71cdf08c-1d77-4252-bc08-837df2e0e1c4",
+		"name": "BOOTCAMP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10193432"
+	},
+	"item": [
+		{
+			"name": "MAHASISWA",
+			"item": [
+				{
+					"name": "INSERT MAHASISWA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "016",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Komarudin",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "L",
+									"type": "text"
+								},
+								{
+									"key": "tempat_lahir",
+									"value": "Bandung",
+									"type": "text"
+								},
+								{
+									"key": "tgl_lahir",
+									"value": "1997-01-01",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Jl Bla bla",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"mahasiswa"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MAHASISWA",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"mahasiswa"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "offset",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MAHASISWA BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MAHASISWA",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nim",
+									"value": "123123",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Komarudin",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "L",
+									"type": "text"
+								},
+								{
+									"key": "tempat_lahir",
+									"value": "Bandung",
+									"type": "text"
+								},
+								{
+									"key": "tgl_lahir",
+									"value": "1997-01-01",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Jl Bla bla",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE MAHASISWA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/mahasiswa/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KHS",
+			"item": [
+				{
+					"name": "GET KHS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/khs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"khs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET BY ID KHS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/khs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"khs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSERT KHS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "id_matakuliah",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nilai_harian",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "nilai_uts",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "nilai_uas",
+									"value": "80",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/khs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"khs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE KHS",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nilai_harian",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "nilai_uts",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "nilai_uas",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/khs/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"khs",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE KHS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/khs/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"khs",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MATA KULIAH",
+			"item": [
+				{
+					"name": "GET MATAKULIAH",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/matakuliah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSERT MATAKULIAH",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_matakuliah",
+									"value": "PEMROGRAMAN WB",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/matakuliah",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matakuliah"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET MATAKULIAH GET BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/matakuliah/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matakuliah",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DATA MATAKULIAH",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/matakuliah/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matakuliah",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DATA MATAKULIAH",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_matakuliah",
+									"value": "PEMROGRAMAN WEB",
+									"type": "text"
+								},
+								{
+									"key": "sks",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/matakuliah/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"matakuliah",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

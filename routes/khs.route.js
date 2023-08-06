@@ -3,16 +3,16 @@ const khsController = require("../controllers/khs.controller.js");
 const router = express.Router();
 
 //Get
-// router.get("/:id", mahasiswaController.getById);
+router.get("/:id", khsController.getById);
 router.get("/", khsController.get);
 
 //Insert
-// router.post("/", mahasiswaController.store);
+router.post("/", khsController.store);
 
 //Update
-// router.put("/:id", mahasiswaController.update);
+router.put("/:id", khsController.update);
 
 //Delete
-// router.delete("/:id", mahasiswaController.destroy);
+router.delete("/:id", khsController.destroy);
 
 module.exports = router;

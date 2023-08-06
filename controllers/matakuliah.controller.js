@@ -28,7 +28,7 @@ const get = async (req, res) => {
   
       res.status(200).json({
         status: true,
-        message: "GET DATA MAHASISWA",
+        message: "GET DATA MATAKULIAH",
         data: data,
       });
     } catch (err) {
